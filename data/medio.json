@@ -1,0 +1,667 @@
+{
+    "tipo": "General",
+    "tema": "Quiz con sonidos",
+    "sonidoSeleccionBase": "./resources/click.mp3",
+    "preguntas": [
+        {
+            "tipo": "select",
+            "texto": "¿Cuál es la duración de una figura Blanca medida en pulsos constantes?",
+            "opciones": [
+                {
+                    "texto": "1 pulso",
+                    "correcta": false
+                },
+                {
+                    "texto": "2 pulsos",
+                    "correcta": true
+                },
+                {
+                    "texto": "4 pulsos",
+                    "correcta": false
+                },
+                {
+                    "texto": "½ pulso",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cómo se llama el símbolo que indica silencio durante la duración de una Negra?",
+            "opciones": [
+                {
+                    "texto": "Silencio de Negra",
+                    "correcta": true
+                },
+                {
+                    "texto": "Silencio de Corchea",
+                    "correcta": false
+                },
+                {
+                    "texto": "Silencio de Redonda",
+                    "correcta": false
+                },
+                {
+                    "texto": "Silencio de Blanca",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "En el árbol de valores rítmicos, ¿cuántas Corcheas equivalen a una sola Blanca?",
+            "opciones": [
+                {
+                    "texto": "8 corcheas",
+                    "correcta": false
+                },
+                {
+                    "texto": "4 corcheas",
+                    "correcta": true
+                },
+                {
+                    "texto": "2 corcheas",
+                    "correcta": false
+                },
+                {
+                    "texto": "6 corcheas",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué función cumple el numerador (número superior) en una indicación de compás?",
+            "opciones": [
+                {
+                    "texto": "Indica cuántos pulsos hay en cada compás",
+                    "correcta": true
+                },
+                {
+                    "texto": "Determina la velocidad de la canción",
+                    "correcta": false
+                },
+                {
+                    "texto": "Señala la clave en la que se debe leer",
+                    "correcta": false
+                },
+                {
+                    "texto": "Define qué figura vale un tiempo",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "Si un compás tiene un denominador de 4, ¿cuál es la figura base del pulso?",
+            "opciones": [
+                {
+                    "texto": "La Redonda",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Blanca",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Corchea",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Negra",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué nota musical representa la letra D en el cifrado anglosajón?",
+            "opciones": [
+                {
+                    "texto": "Sol",
+                    "correcta": false
+                },
+                {
+                    "texto": "Do",
+                    "correcta": false
+                },
+                {
+                    "texto": "Re",
+                    "correcta": true
+                },
+                {
+                    "texto": "Mi",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué significa una letra de cifrado que no va acompañada de ningún símbolo (ej. G)?",
+            "opciones": [
+                {
+                    "texto": "Solo la nota individual",
+                    "correcta": false
+                },
+                {
+                    "texto": "Acorde mayor",
+                    "correcta": true
+                },
+                {
+                    "texto": "Acorde disminuido",
+                    "correcta": false
+                },
+                {
+                    "texto": "Acorde menor",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuál es la unidad de medida más pequeña entre dos notas en el sistema musical occidental?",
+            "opciones": [
+                {
+                    "texto": "La Octava",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Tercera",
+                    "correcta": false
+                },
+                {
+                    "texto": "El Tono",
+                    "correcta": false
+                },
+                {
+                    "texto": "El Semitono",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuántos semitonos exactos contiene una 3ra Mayor?",
+            "opciones": [
+                {
+                    "texto": "5 semitonos",
+                    "correcta": false
+                },
+                {
+                    "texto": "4 semitonos",
+                    "correcta": true
+                },
+                {
+                    "texto": "2 semitonos",
+                    "correcta": false
+                },
+                {
+                    "texto": "3 semitonos",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuál es la secuencia de intervalos (fórmula) para construir cualquier Escala Mayor?",
+            "opciones": [
+                {
+                    "texto": "T−S−T−T−S−T−T",
+                    "correcta": false
+                },
+                {
+                    "texto": "T−T−T−S−T−T−S",
+                    "correcta": false
+                },
+                {
+                    "texto": "T−T−S−T−T−T−S",
+                    "correcta": true
+                },
+                {
+                    "texto": "S−T−T−S−T−T−T",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cómo se denomina al primer grado (I) de la escala, que actúa como centro de gravedad?",
+            "opciones": [
+                {
+                    "texto": "Sensible",
+                    "correcta": false
+                },
+                {
+                    "texto": "Dominante",
+                    "correcta": false
+                },
+                {
+                    "texto": "Subdominante",
+                    "correcta": false
+                },
+                {
+                    "texto": "Tónica",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué notas forman la tríada de Do Mayor (C) en estado fundamental?",
+            "opciones": [
+                {
+                    "texto": "C−E−G",
+                    "correcta": true
+                },
+                {
+                    "texto": "C−Eb−G",
+                    "correcta": false
+                },
+                {
+                    "texto": "C−E−Gb",
+                    "correcta": false
+                },
+                {
+                    "texto": "C−F−G",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿En qué línea del pentagrama se sitúa la nota Sol de referencia en la Clave de Sol (𝄞)?",
+            "opciones": [
+                {
+                    "texto": "Tercera línea",
+                    "correcta": false
+                },
+                {
+                    "texto": "Cuarta línea",
+                    "correcta": false
+                },
+                {
+                    "texto": "Segunda línea",
+                    "correcta": true
+                },
+                {
+                    "texto": "Primera línea",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Para qué se utilizan las 'líneas adicionales' en la escritura musical?",
+            "opciones": [
+                {
+                    "texto": "Para señalar un silencio prolongado",
+                    "correcta": false
+                },
+                {
+                    "texto": "Para escribir notas que exceden el rango de las 5 líneas estándar",
+                    "correcta": true
+                },
+                {
+                    "texto": "Para indicar el final de una sección musical",
+                    "correcta": false
+                },
+                {
+                    "texto": "Para decorar el inicio del pentagrama",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué sensación rítmica suele transmitir un compás de 3/4?",
+            "opciones": [
+                {
+                    "texto": "Sensación de marcha militar (izquierda-derecha)",
+                    "correcta": false
+                },
+                {
+                    "texto": "Sensación de balanceo o giro (como un vals)",
+                    "correcta": true
+                },
+                {
+                    "texto": "Sensación de rock estable y cuadrado",
+                    "correcta": false
+                },
+                {
+                    "texto": "Sensación de velocidad extrema",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuál es el intervalo 'Justo' que existe entre la nota Do y la nota Sol?",
+            "opciones": [
+                {
+                    "texto": "5ta Justa",
+                    "correcta": true
+                },
+                {
+                    "texto": "4ta Justa",
+                    "correcta": false
+                },
+                {
+                    "texto": "Unísono",
+                    "correcta": false
+                },
+                {
+                    "texto": "Octava Justa",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "En el cifrado anglosajón, ¿qué nota representa la letra A?",
+            "opciones": [
+                {
+                    "texto": "Sol",
+                    "correcta": false
+                },
+                {
+                    "texto": "Mi",
+                    "correcta": false
+                },
+                {
+                    "texto": "La",
+                    "correcta": true
+                },
+                {
+                    "texto": "Do",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuántos sostenidos (#) tiene la escala de Sol Mayor?",
+            "opciones": [
+                {
+                    "texto": "Uno (F#)",
+                    "correcta": true
+                },
+                {
+                    "texto": "Dos (F# y C#)",
+                    "correcta": false
+                },
+                {
+                    "texto": "Ninguno",
+                    "correcta": false
+                },
+                {
+                    "texto": "Uno (Bb)",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué componente de una tríada determina si su sonido es Mayor (alegre) o Menor (triste)?",
+            "opciones": [
+                {
+                    "texto": "La Quinta",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Octava",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Fundamental",
+                    "correcta": false
+                },
+                {
+                    "texto": "La Tercera",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuál es la distancia entre las notas naturales Mi y Fa?",
+            "opciones": [
+                {
+                    "texto": "Un Semitono",
+                    "correcta": true
+                },
+                {
+                    "texto": "Un Tono",
+                    "correcta": false
+                },
+                {
+                    "texto": "Dos Tonos",
+                    "correcta": false
+                },
+                {
+                    "texto": "Una Tercera",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "En un compás de 2/4, ¿cuál es el acento métrico natural?",
+            "opciones": [
+                {
+                    "texto": "El primer tiempo es fuerte y el segundo débil",
+                    "correcta": true
+                },
+                {
+                    "texto": "El segundo tiempo es el más fuerte",
+                    "correcta": false
+                },
+                {
+                    "texto": "Ambos tiempos son igual de fuertes",
+                    "correcta": false
+                },
+                {
+                    "texto": "No tiene acentos",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué par de grados se conocen como 'los vecinos' y forman la base de progresiones en el rock y el blues?",
+            "opciones": [
+                {
+                    "texto": "II y III",
+                    "correcta": false
+                },
+                {
+                    "texto": "VI y VII",
+                    "correcta": false
+                },
+                {
+                    "texto": "IV y V",
+                    "correcta": true
+                },
+                {
+                    "texto": "I y II",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cómo se describe visualmente el silencio de Redonda?",
+            "opciones": [
+                {
+                    "texto": "Un pequeño rectángulo negro que se asienta sobre la línea",
+                    "correcta": false
+                },
+                {
+                    "texto": "Un garabato que parece una letra Z",
+                    "correcta": false
+                },
+                {
+                    "texto": "Dos líneas paralelas verticales",
+                    "correcta": false
+                },
+                {
+                    "texto": "Un pequeño rectángulo negro que cuelga de una línea",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "Si construimos una escala mayor empezando en Fa (F), ¿qué alteración debemos aplicar?",
+            "opciones": [
+                {
+                    "texto": "Añadir un Do sostenido (C#)",
+                    "correcta": false
+                },
+                {
+                    "texto": "No lleva alteraciones",
+                    "correcta": false
+                },
+                {
+                    "texto": "Añadir un Si bemol (Bb)",
+                    "correcta": true
+                },
+                {
+                    "texto": "Añadir un Fa sostenido (F#)",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué notas componen el acorde de La menor (Am) en su forma de tríada básica?",
+            "opciones": [
+                {
+                    "texto": "A−C−E",
+                    "correcta": true
+                },
+                {
+                    "texto": "A−C#−E",
+                    "correcta": false
+                },
+                {
+                    "texto": "A−C−Eb",
+                    "correcta": false
+                },
+                {
+                    "texto": "A−B−E",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Cuál es la función del denominador en un compás de 4/4?",
+            "opciones": [
+                {
+                    "texto": "Define la clave de la partitura",
+                    "correcta": false
+                },
+                {
+                    "texto": "Indica que la Negra es la figura que vale un pulso",
+                    "correcta": true
+                },
+                {
+                    "texto": "Indica la cantidad de notas por segundo",
+                    "correcta": false
+                },
+                {
+                    "texto": "Indica que hay 4 tiempos en el compás",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "En el pentagrama, ¿cómo se cuentan las líneas y los espacios?",
+            "opciones": [
+                {
+                    "texto": "De izquierda a derecha",
+                    "correcta": false
+                },
+                {
+                    "texto": "De abajo hacia arriba",
+                    "correcta": true
+                },
+                {
+                    "texto": "De arriba hacia abajo",
+                    "correcta": false
+                },
+                {
+                    "texto": "Solo se cuentan las líneas, los espacios no se numeran",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué clave se sitúa en la cuarta línea y se usa para instrumentos como el bajo eléctrico?",
+            "opciones": [
+                {
+                    "texto": "Clave de Sol",
+                    "correcta": false
+                },
+                {
+                    "texto": "Clave de La",
+                    "correcta": false
+                },
+                {
+                    "texto": "Clave de Do",
+                    "correcta": false
+                },
+                {
+                    "texto": "Clave de Fa",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "Si una canción está en 4/4 y un compás tiene una Blanca, ¿cuántas Negras faltan para completarlo?",
+            "opciones": [
+                {
+                    "texto": "Ninguna",
+                    "correcta": false
+                },
+                {
+                    "texto": "2 negras",
+                    "correcta": true
+                },
+                {
+                    "texto": "3 negras",
+                    "correcta": false
+                },
+                {
+                    "texto": "1 negra",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Qué nota representa la letra B en el sistema internacional de cifrado?",
+            "opciones": [
+                {
+                    "texto": "Si bemol",
+                    "correcta": false
+                },
+                {
+                    "texto": "La",
+                    "correcta": false
+                },
+                {
+                    "texto": "Do",
+                    "correcta": false
+                },
+                {
+                    "texto": "Si",
+                    "correcta": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "tipo": "Bateria",
+    "tema": "Quiz con sonidos",
+    "sonidoSeleccionBase": "./resources/click.mp3",
+    "preguntas": [
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha la melodía y selecciona el animal",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 120,
+                "sequence": [
+                    {
+                        "note": "C4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "G4",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Perro",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Gato",
+                    "sonido": {
+                        "type": "note",
+                        "note": "G4",
+                        "duration": 3
+                    },
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el sonido y selecciona la respuesta correcta",
+            "audioPregunta": "./resources/catmeuw.mp3",
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Perro1",
+                    "sonido": "./resources/fail.mp3",
+                    "correcta": false
+                },
+                {
+                    "tipo": "imagen",
+                    "contenido": "perro2.png",
+                    "sonido": "./resources/fail.mp3",
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Gato3",
+                    "sonido": "./resources/catmeuw.mp3",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Capital de Francia?",
+            "opciones": [
+                {
+                    "texto": "Madrid",
+                    "correcta": false
+                },
+                {
+                    "texto": "París",
+                    "correcta": true
+                },
+                {
+                    "texto": "Roma",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "select",
+            "texto": "¿Capital de pepe?",
+            "opciones": [
+                {
+                    "texto": "Madrid",
+                    "correcta": false
+                },
+                {
+                    "texto": "París",
+                    "correcta": true
+                },
+                {
+                    "texto": "Roma",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona el gato",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Perro",
+                    "correcta": false
+                },
+                {
+                    "src": "./resources/gatocomuneuropeo.jpg",
+                    "sonido": "./resources/catmeuw.mp3",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "complete",
+            "texto": "Completa: 2 + 2 = ____",
+            "correcta": "4"
+        },
+        {
+            "tipo": "audio",
+            "texto": "Selecciona el sonido correcto",
+            "opciones": [
+                {
+                    "audioSrc": "./resources/fail.mp3",
+                    "sonido": "./resources/fail.mp3",
+                    "correcta": false
+                },
+                {
+                    "audioSrc": "./resources/correct.mp3",
+                    "sonido": "./resources/correct.mp3",
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena correctamente: 1 - 2 - 3",
+            "opciones": [
+                {
+                    "texto": "3"
+                },
+                {
+                    "texto": "1"
+                },
+                {
+                    "texto": "2"
+                }
+            ],
+            "correcta": [
+                "1",
+                "2",
+                "3"
+            ]
+        }
+    ]
+}
