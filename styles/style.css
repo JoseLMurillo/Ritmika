@@ -99,6 +99,35 @@ h3 {
 }
 
 /* ============================================
+   SELECTOR DE NIVEL
+   ============================================ */
+#selectorNivel {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid var(--color-primario);
+    border-radius: var(--radio-border);
+    background-color: white;
+    color: var(--color-texto);
+    cursor: pointer;
+    transition: var(--transicion);
+    box-shadow: var(--sombra-sm);
+    margin: 12px auto;
+    display: block;
+}
+
+#selectorNivel:hover {
+    border-color: var(--color-secundario);
+    box-shadow: var(--sombra-md);
+}
+
+#selectorNivel:focus {
+    outline: none;
+    border-color: var(--color-terciario);
+}
+
+/* ============================================
    SEPARADOR
    ============================================ */
 hr {

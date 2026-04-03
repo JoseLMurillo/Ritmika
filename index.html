@@ -24,8 +24,9 @@
 
 <h2>Selecciona módulo</h2>
 
+<div style="display: flex; justify-content: center; align-items: center;">
 <select id="selectorModulo">
-    <option value="">-- Seleccionar --</option>
+    <option value="">-- MODULO --</option>
     <option value="general">General</option>
     <option value="bateria">Batería</option>
     <option value="guitarra">Guitarra</option>
@@ -34,6 +35,15 @@
     <option value="tecnica_vocal">Técnica Vocal</option>
 </select>
 
+<select id="selectorNivel">
+    <option value="">-- NIVEL --</option>
+    <option value="basico">Basico</option>
+    <option value="intermedio">Intermedio</option>
+    <option value="abanzado">Avanzado</option>
+</select>
+</div>
+
+
 <hr>
 
 <h1 id="tema"></h1>
@@ -41,7 +51,7 @@
 
 <div id="contenedor"></div>
 
-<button id="btnConfirmar" disabled>Confirmar</button>
+<button id="btnConfirmar" disabled>Comenzar Quiz</button>
 
 <br>
 <br>
@@ -52,7 +62,6 @@
 <section>
     <div>
         <h2>Pendientes</h2>
-        <p>Resonsibe para dispositivos moviles</p>
         <p>Contenido para los intrumentos</p>
         <p>Cambiar el color</p>
     </div>

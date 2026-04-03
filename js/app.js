@@ -6,14 +6,23 @@ const sonidoCorrecto = "./resources/correct.mp3";
 const sonidoIncorrecto = "./resources/fail.mp3";
 
 const selectorModulo = document.getElementById("selectorModulo");
+const selectorNivel = document.getElementById("selectorNivel");
+
 const tema = document.getElementById("tema");
 const preguntaTexto = document.getElementById("preguntaTexto");
 const contenedor = document.getElementById("contenedor");
 const btnConfirmar = document.getElementById("btnConfirmar");
 let correctas = 0;
 
-selectorModulo.addEventListener("change", async () => {
 
+
+
+
+
+
+
+
+/* selectorModulo.addEventListener("change", async () => {
     if (!selectorModulo.value) return;
 
     const response = await fetch(`./data/${selectorModulo.value}_basico.json`);
@@ -23,7 +32,54 @@ selectorModulo.addEventListener("change", async () => {
     btnConfirmar.disabled = false;
 
     cargarPregunta();
+}); */
+
+
+// Función principal para cargar los datos
+async function cargarQuiz() {
+    const modulo = selectorModulo.value;
+    const nivel = selectorNivel.value;
+
+    // Solo disparamos el fetch si ambos campos tienen valor
+    if (!modulo || !nivel) return;
+
+    try {
+        // Usamos la estructura de carpetas: ./data/modulo/nivel.json
+        const response = await fetch(`./data/${modulo}/${nivel}.json`);
+        
+        if (!response.ok) throw new Error("Archivo no encontrado");
+
+        quizData = await response.json();
+        preguntaActual = 0;
+        btnConfirmar.disabled = false;
+
+        cargarPregunta();
+        console.log(`Cargado: ${modulo} en nivel ${nivel}`);
+    } catch (error) {
+        console.error("Error al cargar el JSON:", error);
+    }
+}
+
+// Eventos
+selectorModulo.addEventListener("change", () => {
+    // Si cambia el módulo, reiniciamos el nivel para obligar a elegir uno nuevo
+    selectorNivel.value = "";
+    btnConfirmar.disabled = true;
+    
+    // Opcional: Mostrar el selector de nivel si estaba oculto
+    selectorNivel.style.display = "block";
 });
+
+selectorNivel.addEventListener("change", cargarQuiz);
+
+
+
+
+
+
+
+
+
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
