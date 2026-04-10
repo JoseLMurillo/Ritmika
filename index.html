@@ -1,75 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Music Quiz App</title>
-<link rel="stylesheet" href="styles/style.css">
-<style>
-    body { font-family: Arial; text-align:center; }
-    img { width:120px; cursor:pointer; margin:10px; }
-    .selected { border:3px solid green; }
-    .order-item {
-        padding:8px;
-        margin:5px;
-        border:1px solid #000;
-        cursor:pointer;
-        display:inline-block;
-    }
-    .order-selected { background:lightgreen; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Quiz App</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        img {
+            width: 120px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .selected {
+            border: 3px solid green;
+        }
+
+        .order-item {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .order-selected {
+            background: lightgreen;
+        }
+    </style>
 
 </head>
+
 <body>
 
-<h2>Selecciona módulo</h2>
+    <h2>Selecciona módulo</h2>
 
-<div style="display: flex; justify-content: center; align-items: center;">
-<select id="selectorModulo">
-    <option value="">-- MODULO --</option>
-    <option value="general">General</option>
-    <option value="bateria">Batería</option>
-    <option value="guitarra">Guitarra</option>
-    <option value="piano">Piano</option>
-    <option value="bajo">Bajo</option>
-    <option value="tecnica_vocal">Técnica Vocal</option>
-</select>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <select id="selectorModulo">
+            <option value="">-- MODULO --</option>
+            <option value="general">General</option>
+            <option value="bateria">Batería</option>
+            <option value="guitarra">Guitarra</option>
+            <option value="piano">Piano</option>
+            <option value="bajo">Bajo</option>
+            <option value="tecnica_vocal">Técnica Vocal</option>
+        </select>
 
-<select id="selectorNivel">
-    <option value="">-- NIVEL --</option>
-    <option value="basico">Basico</option>
-    <option value="intermedio">Intermedio</option>
-    <option value="abanzado">Avanzado</option>
-</select>
-</div>
-
-
-<hr>
-
-<h1 id="tema"></h1>
-<h3 id="preguntaTexto"></h3>
-
-<div id="contenedor"></div>
-
-<button id="btnConfirmar" disabled>Comenzar Quiz</button>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<section>
-    <div>
-        <h2>Pendientes</h2>
-        <p>Contenido para los intrumentos</p>
-        <p>Cambiar el color</p>
+        <select id="selectorNivel">
+            <option value="">-- NIVEL --</option>
+            <option value="basico">Basico</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="abanzado">Avanzado</option>
+        </select>
     </div>
-</section>
 
-<script src="./js/sound.js"></script>
-<script src="./js/style.js"></script>
-<script src="./js/app.js"></script>
+    <hr>
+
+    <h1 id="tema"></h1>
+    <h3 id="preguntaTexto"></h3>
+
+    <div id="contenedor">
+        <div id="explicacion" background="lightgray" style="margin:20px; padding:10px; display:none;">
+            <p id="explicacionTexto">Explicacion de ejemplo</p>
+        </div>
+    </div>
+
+
+
+    <button id="btnConfirmar" disabled>Comenzar Quiz</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div>
+            <h2>Pendientes</h2>
+            <p>Contenido para los intrumentos</p>
+            <p>Cambiar el color</p>
+        </div>
+    </section>
+
+    <script src="./js/sound.js"></script>
+    <script src="./js/style.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
+
 </html>

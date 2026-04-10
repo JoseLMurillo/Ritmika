@@ -14,27 +14,6 @@ const contenedor = document.getElementById("contenedor");
 const btnConfirmar = document.getElementById("btnConfirmar");
 let correctas = 0;
 
-
-
-
-
-
-
-
-
-/* selectorModulo.addEventListener("change", async () => {
-    if (!selectorModulo.value) return;
-
-    const response = await fetch(`./data/${selectorModulo.value}_basico.json`);
-    quizData = await response.json();
-
-    preguntaActual = 0;
-    btnConfirmar.disabled = false;
-
-    cargarPregunta();
-}); */
-
-
 // Función principal para cargar los datos
 async function cargarQuiz() {
     const modulo = selectorModulo.value;
@@ -60,6 +39,7 @@ async function cargarQuiz() {
     }
 }
 
+
 // Eventos
 selectorModulo.addEventListener("change", () => {
     // Si cambia el módulo, reiniciamos el nivel para obligar a elegir uno nuevo
@@ -71,14 +51,6 @@ selectorModulo.addEventListener("change", () => {
 });
 
 selectorNivel.addEventListener("change", cargarQuiz);
-
-
-
-
-
-
-
-
 
 
 function shuffle(array) {
@@ -254,6 +226,8 @@ btnConfirmar.addEventListener("click", () => {
     if (correcta) {
         playSound(sonidoCorrecto);
         correctas++;
+        document.getElementById("explicacionTexto").textContent = pregunta.explicacion;
+        
         console.log("Correctas:", correctas);
     } else {
         playSound(sonidoIncorrecto);

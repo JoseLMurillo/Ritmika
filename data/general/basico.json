@@ -531,6 +531,639 @@
                     "correcta": true
                 }
             ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el intervalo. ¿Es una tercera mayor o una tercera menor?",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 100,
+                "sequence": [
+                    {
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Tercera mayor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Tercera menor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el ritmo. ¿En qué compás encaja mejor?",
+            "audioPregunta": {
+                "type": "drumPattern",
+                "tempo": 120,
+                "pattern": [
+                    {
+                        "drum": "kick",
+                        "time": 0
+                    },
+                    {
+                        "drum": "snare",
+                        "time": 0.5
+                    },
+                    {
+                        "drum": "kick",
+                        "time": 1
+                    },
+                    {
+                        "drum": "snare",
+                        "time": 1.5
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "2/4",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "kick"
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "3/4",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "4/4",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "hat"
+                    },
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha la escala. ¿Es mayor o menor?",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 140,
+                "sequence": [
+                    {
+                        "note": "A3",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "B3",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "C4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "D4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "F4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "G4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "A4",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Mayor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "A3",
+                        "duration": 0.5
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Menor (natural)",
+                    "sonido": {
+                        "type": "note",
+                        "note": "A3",
+                        "duration": 0.5
+                    },
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el acorde. ¿Es mayor o menor?",
+            "audioPregunta": {
+                "type": "chord",
+                "tempo": 80,
+                "notes": [
+                    "D4",
+                    "F4",
+                    "A4"
+                ],
+                "duration": 2
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Mayor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "D4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Menor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "D4",
+                        "duration": 1
+                    },
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha la melodía. ¿Cuántos pulsos tiene el primer compás (compás de 4/4)?",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 110,
+                "sequence": [
+                    {
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "C4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "D4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "rest",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "3 pulsos",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "kick"
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "4 pulsos",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "2 pulsos",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "hat"
+                    },
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el sonido. ¿Qué nota es? (referencia: La4 = 440 Hz)",
+            "audioPregunta": {
+                "type": "note",
+                "note": "F4",
+                "duration": 1.5
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Mi4",
+                    "sonido": {
+                        "type": "note",
+                        "note": "E4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Fa4",
+                    "sonido": {
+                        "type": "note",
+                        "note": "F4",
+                        "duration": 1
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Sol4",
+                    "sonido": {
+                        "type": "note",
+                        "note": "G4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona la imagen que muestra una **clave de sol**.",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Clave+de+Fa",
+                    "correcta": false
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Clave+de+Sol",
+                    "correcta": true
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Clave+de+Do",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Cuál de estas figuras rítmicas es una **corchea**?",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Redonda",
+                    "correcta": false
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Corchea",
+                    "correcta": true
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Semicorchea",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica el **pentagrama** (conjunto de 5 líneas).",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Linea+simple",
+                    "correcta": false
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=5+lineas+pentagrama",
+                    "correcta": true
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Tabla+de+ritmos",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Cuál de estos símbolos representa un **silencio de negra**?",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Silencio+de+redonda",
+                    "correcta": false
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Silencio+de+negra",
+                    "correcta": true
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Silencio+de+blanca",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona la imagen que muestra una **blanca**.",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Negra",
+                    "correcta": false
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Blanca",
+                    "correcta": true
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Redonda",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Cuál de estos símbolos es un **becuadro**?",
+            "opciones": [
+                {
+                    "src": "https://via.placeholder.com/120?text=Sostenido",
+                    "correcta": false
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Becuadro",
+                    "correcta": true
+                },
+                {
+                    "src": "https://via.placeholder.com/120?text=Bemol",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "complete",
+            "texto": "Una **negra** dura ______ tiempo(s) en un compás de 4/4.",
+            "correcta": "1"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La escala de **Sol Mayor** tiene un ______ sostenido (Fa#).",
+            "correcta": "fa"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El acorde de **Do mayor** está formado por las notas Do, ______ y Sol.",
+            "correcta": "mi"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La **clave de fa** se coloca en la ______ línea del pentagrama (contando desde abajo).",
+            "correcta": "cuarta"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Un **tono** equivale a ______ semitonos.",
+            "correcta": "2"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El grado **V** de la escala se llama ______.",
+            "correcta": "dominante"
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las siguientes figuras de menor a mayor duración (en un compás de 4/4):",
+            "opciones": [
+                {
+                    "texto": "negra"
+                },
+                {
+                    "texto": "corchea"
+                },
+                {
+                    "texto": "blanca"
+                },
+                {
+                    "texto": "semicorchea"
+                }
+            ],
+            "correcta": [
+                "semicorchea",
+                "corchea",
+                "negra",
+                "blanca"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena los intervalos de menor a mayor distancia en semitonos:",
+            "opciones": [
+                {
+                    "texto": "3ª menor"
+                },
+                {
+                    "texto": "2ª mayor"
+                },
+                {
+                    "texto": "5ª justa"
+                },
+                {
+                    "texto": "unísono"
+                }
+            ],
+            "correcta": [
+                "unísono",
+                "2ª mayor",
+                "3ª menor",
+                "5ª justa"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Coloca los grados de la escala mayor en el orden correcto (I a VII):",
+            "opciones": [
+                {
+                    "texto": "Subdominante"
+                },
+                {
+                    "texto": "Tónica"
+                },
+                {
+                    "texto": "Mediante"
+                },
+                {
+                    "texto": "Sensible"
+                },
+                {
+                    "texto": "Dominante"
+                },
+                {
+                    "texto": "Superdominante"
+                },
+                {
+                    "texto": "Supertónica"
+                }
+            ],
+            "correcta": [
+                "Tónica",
+                "Supertónica",
+                "Mediante",
+                "Subdominante",
+                "Dominante",
+                "Superdominante",
+                "Sensible"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena los compases de **más pulsos por compás** a **menos pulsos**:",
+            "opciones": [
+                {
+                    "texto": "2/4"
+                },
+                {
+                    "texto": "6/8"
+                },
+                {
+                    "texto": "3/4"
+                },
+                {
+                    "texto": "4/4"
+                }
+            ],
+            "correcta": [
+                "6/8",
+                "4/4",
+                "3/4",
+                "2/4"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las siguientes notas en orden ascendente (de más grave a más aguda):",
+            "opciones": [
+                {
+                    "texto": "C5"
+                },
+                {
+                    "texto": "A3"
+                },
+                {
+                    "texto": "G4"
+                },
+                {
+                    "texto": "D2"
+                }
+            ],
+            "correcta": [
+                "D2",
+                "A3",
+                "G4",
+                "C5"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las alteraciones de **más a menos común** en armaduras de clave (mayor uso):",
+            "opciones": [
+                {
+                    "texto": "bemol"
+                },
+                {
+                    "texto": "sostenido"
+                },
+                {
+                    "texto": "becuadro"
+                }
+            ],
+            "correcta": [
+                "sostenido",
+                "bemol",
+                "becuadro"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las duraciones de **mayor a menor** (sin puntillo):",
+            "opciones": [
+                {
+                    "texto": "redonda"
+                },
+                {
+                    "texto": "negra"
+                },
+                {
+                    "texto": "blanca"
+                },
+                {
+                    "texto": "corchea"
+                }
+            ],
+            "correcta": [
+                "redonda",
+                "blanca",
+                "negra",
+                "corchea"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena los pasos para construir una **escala mayor** (secuencia lógica):",
+            "opciones": [
+                {
+                    "texto": "Aplicar fórmula T-T-S-T-T-T-S"
+                },
+                {
+                    "texto": "Elegir la tónica"
+                },
+                {
+                    "texto": "Escribir las 7 notas sin alterar"
+                },
+                {
+                    "texto": "Añadir alteraciones necesarias"
+                }
+            ],
+            "correcta": [
+                "Elegir la tónica",
+                "Escribir las 7 notas sin alterar",
+                "Aplicar fórmula T-T-S-T-T-T-S",
+                "Añadir alteraciones necesarias"
+            ]
         }
     ]
 }
