@@ -67,7 +67,8 @@ function cargarPregunta() {
     contenedor.innerHTML = "";
 
     quizData.preguntas = shuffle(quizData.preguntas);
-    const pregunta = quizData.preguntas[preguntaActual];
+    const listPreguntas = quizData.preguntas.slice(0, randomInt(10, 15)); 
+    const pregunta = listPreguntas[preguntaActual];
 
     tema.textContent = quizData.tema;
     preguntaTexto.textContent = pregunta.texto;
