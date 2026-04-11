@@ -67,8 +67,10 @@ function cargarPregunta() {
     contenedor.innerHTML = "";
 
     quizData.preguntas = shuffle(quizData.preguntas);
-    const listPreguntas = quizData.preguntas.slice(0, randomInt(10, 15)); 
-    const pregunta = listPreguntas[preguntaActual];
+    const listPreguntas = quizData.preguntas.slice(0, Math.floor(Math.random() * 6) + 10); 
+    
+    //const pregunta = quizData.preguntas[preguntaActual];
+    const pregunta = listPreguntas[preguntaActual]; // PARA CARGAR TODAS LAS PREGUNTAS Y PROBARLAS
 
     tema.textContent = quizData.tema;
     preguntaTexto.textContent = pregunta.texto;
@@ -227,7 +229,7 @@ btnConfirmar.addEventListener("click", () => {
     if (correcta) {
         playSound(sonidoCorrecto);
         correctas++;
-        document.getElementById("explicacionTexto").textContent = pregunta.explicacion;
+        // document.getElementById("explicacionTexto").textContent = pregunta.explicacion;
         
         console.log("Correctas:", correctas);
     } else {

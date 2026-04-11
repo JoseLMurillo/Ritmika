@@ -358,7 +358,7 @@
         },
         {
             "tipo": "select",
-            "texto": "¿Qué diferencia física y sonora existe entre una tríada mayor y una menor en estado fundamental?",
+            "texto": "¿Qué diferencia física y sonora existe entre una tríada mayor y una menor?",
             "opciones": [
                 {
                     "texto": "La tríada menor tiene una nota más que la mayor.",
@@ -490,7 +490,7 @@
         },
         {
             "tipo": "select",
-            "texto": "Si una canción está en la tonalidad de Re Mayor (D), ¿qué acordes serían sus grados I, IV y V?",
+            "texto": "Si una canción está en la tonalidad de D, ¿qué acordes serían sus grados I, IV y V?",
             "opciones": [
                 {
                     "texto": "Re, Mi, Fa",
@@ -574,7 +574,7 @@
         },
         {
             "tipo": "audioQuestion",
-            "texto": "Escucha el ritmo. ¿En qué compás encaja mejor?",
+            "texto": "ESTA PREGUNTA ESTA EN DESARROLLO - Escucha el ritmo. ¿En qué compás encaja mejor?",
             "audioPregunta": {
                 "type": "drumPattern",
                 "tempo": 120,
@@ -681,7 +681,7 @@
                 },
                 {
                     "tipo": "texto",
-                    "contenido": "Menor (natural)",
+                    "contenido": "Menor",
                     "sonido": {
                         "type": "note",
                         "note": "A3",
@@ -788,7 +788,7 @@
         },
         {
             "tipo": "audioQuestion",
-            "texto": "Escucha el sonido. ¿Qué nota es? (referencia: La4 = 440 Hz)",
+            "texto": "Escucha el sonido. ¿Qué nota es? ESCUCHA, PIENSA Y LUEGO SELECCIONA",
             "audioPregunta": {
                 "type": "note",
                 "note": "F4",
@@ -797,7 +797,7 @@
             "opciones": [
                 {
                     "tipo": "texto",
-                    "contenido": "Mi4",
+                    "contenido": "E4",
                     "sonido": {
                         "type": "note",
                         "note": "E4",
@@ -807,7 +807,7 @@
                 },
                 {
                     "tipo": "texto",
-                    "contenido": "Fa4",
+                    "contenido": "F4",
                     "sonido": {
                         "type": "note",
                         "note": "F4",
@@ -817,7 +817,7 @@
                 },
                 {
                     "tipo": "texto",
-                    "contenido": "Sol4",
+                    "contenido": "G4",
                     "sonido": {
                         "type": "note",
                         "note": "G4",
@@ -850,33 +850,33 @@
             "texto": "¿Cuál de estas figuras rítmicas es una **corchea**?",
             "opciones": [
                 {
-                    "src": "https://via.placeholder.com/120?text=Redonda",
+                    "src": "https://primeroareal20.wordpress.com/wp-content/uploads/2020/04/redonda.jpg",
                     "correcta": false
                 },
                 {
-                    "src": "https://via.placeholder.com/120?text=Corchea",
+                    "src": "https://www.nicepng.com/png/full/105-1059898_la-nota-musical-corchea-vale-la-mitad-de.png",
                     "correcta": true
                 },
                 {
-                    "src": "https://via.placeholder.com/120?text=Semicorchea",
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkz9Q9K-IpNt8bqKNh6o1JbaEoRXGEnzrt2A&s",
                     "correcta": false
                 }
             ]
         },
         {
             "tipo": "image",
-            "texto": "Identifica el **pentagrama** (conjunto de 5 líneas).",
+            "texto": "Identifica el **pentagrama**",
             "opciones": [
                 {
-                    "src": "https://via.placeholder.com/120?text=Linea+simple",
+                    "src": "https://geometriamagicomundodelorigami.wordpress.com/wp-content/uploads/2016/12/linea-recta.jpg?w=840",
                     "correcta": false
                 },
                 {
-                    "src": "https://via.placeholder.com/120?text=5+lineas+pentagrama",
+                    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Music-staff.png",
                     "correcta": true
                 },
                 {
-                    "src": "https://via.placeholder.com/120?text=Tabla+de+ritmos",
+                    "src": "https://image.jimcdn.com/app/cms/image/transf/dimension=910x10000:format=jpg/path/sb4f720241e8529a4/image/ic5f0323303e7914e/version/1421959710/image.jpg",
                     "correcta": false
                 }
             ]
@@ -918,42 +918,19 @@
             ]
         },
         {
-            "tipo": "image",
-            "texto": "¿Cuál de estos símbolos es un **becuadro**?",
-            "opciones": [
-                {
-                    "src": "https://via.placeholder.com/120?text=Sostenido",
-                    "correcta": false
-                },
-                {
-                    "src": "https://via.placeholder.com/120?text=Becuadro",
-                    "correcta": true
-                },
-                {
-                    "src": "https://via.placeholder.com/120?text=Bemol",
-                    "correcta": false
-                }
-            ]
-        },
-        {
             "tipo": "complete",
             "texto": "Una **negra** dura ______ tiempo(s) en un compás de 4/4.",
             "correcta": "1"
         },
         {
             "tipo": "complete",
-            "texto": "La escala de **Sol Mayor** tiene un ______ sostenido (Fa#).",
+            "texto": "La escala de **Sol Mayor** tiene un (F - nota)______ sostenido (F#).",
             "correcta": "fa"
         },
         {
             "tipo": "complete",
-            "texto": "El acorde de **Do mayor** está formado por las notas Do, ______ y Sol.",
-            "correcta": "mi"
-        },
-        {
-            "tipo": "complete",
-            "texto": "La **clave de fa** se coloca en la ______ línea del pentagrama (contando desde abajo).",
-            "correcta": "cuarta"
+            "texto": "El acorde de C está formado por las notas C, ______ y G.",
+            "correcta": "E"
         },
         {
             "tipo": "complete",
@@ -962,7 +939,7 @@
         },
         {
             "tipo": "complete",
-            "texto": "El grado **V** de la escala se llama ______.",
+            "texto": "El grado **V** de la escala se llama d______.",
             "correcta": "dominante"
         },
         {
@@ -1119,7 +1096,7 @@
         },
         {
             "tipo": "order",
-            "texto": "Ordena las duraciones de **mayor a menor** (sin puntillo):",
+            "texto": "Ordena las duraciones de **mayor a menor**:",
             "opciones": [
                 {
                     "texto": "redonda"
