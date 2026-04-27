@@ -1,0 +1,42 @@
+{
+    "cantidad": 1,
+    "tema": "Acorde - Basico",
+    "preguntas": [
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el acorde. ¿Es mayor o menor?",
+            "audioPregunta": {
+                "type": "chord",
+                "tempo": 80,
+                "notes": [
+                    "D4",
+                    "F4",
+                    "A4"
+                ],
+                "duration": 4
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Mayor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "D4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Menor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "D4",
+                        "duration": 1
+                    },
+                    "correcta": true
+                }
+            ]
+        }
+    ]
+}

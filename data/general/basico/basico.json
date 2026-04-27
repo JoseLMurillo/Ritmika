@@ -1,0 +1,6 @@
+{
+    "tipo": "General",
+    "tema": "General - Basico",
+    "sonidoSeleccionBase": "./resources/click.mp3",
+    "grupos" : ["acorde", "completar", "imagen", "ordenar", "secuencia", "seleccion", "sonido"]
+}

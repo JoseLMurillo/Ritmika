@@ -1,0 +1,205 @@
+{   "cantidad": 8,
+    "tema": "Ordenar - Basico",
+    "preguntas": [
+        {
+            "tipo": "order",
+            "texto": "Ordena las siguientes figuras de menor a mayor duración (en un compás de 4/4):",
+            "opciones": [
+                {
+                    "texto": "negra"
+                },
+                {
+                    "texto": "corchea"
+                },
+                {
+                    "texto": "blanca"
+                },
+                {
+                    "texto": "semicorchea"
+                }
+            ],
+            "correcta": [
+                "semicorchea",
+                "corchea",
+                "negra",
+                "blanca"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena los intervalos de menor a mayor distancia en semitonos:",
+            "opciones": [
+                {
+                    "texto": "3ª menor"
+                },
+                {
+                    "texto": "2ª mayor"
+                },
+                {
+                    "texto": "5ª justa"
+                },
+                {
+                    "texto": "unísono"
+                }
+            ],
+            "correcta": [
+                "unísono",
+                "2ª mayor",
+                "3ª menor",
+                "5ª justa"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Coloca los grados de la escala mayor en el orden correcto (I a VII):",
+            "opciones": [
+                {
+                    "texto": "Subdominante"
+                },
+                {
+                    "texto": "Tónica"
+                },
+                {
+                    "texto": "Mediante"
+                },
+                {
+                    "texto": "Sensible"
+                },
+                {
+                    "texto": "Dominante"
+                },
+                {
+                    "texto": "Superdominante"
+                },
+                {
+                    "texto": "Supertónica"
+                }
+            ],
+            "correcta": [
+                "Tónica",
+                "Supertónica",
+                "Mediante",
+                "Subdominante",
+                "Dominante",
+                "Superdominante",
+                "Sensible"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena los compases de **más pulsos por compás** a **menos pulsos**:",
+            "opciones": [
+                {
+                    "texto": "2/4"
+                },
+                {
+                    "texto": "6/8"
+                },
+                {
+                    "texto": "3/4"
+                },
+                {
+                    "texto": "4/4"
+                }
+            ],
+            "correcta": [
+                "6/8",
+                "4/4",
+                "3/4",
+                "2/4"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las siguientes notas en orden ascendente (de más grave a más aguda):",
+            "opciones": [
+                {
+                    "texto": "C5"
+                },
+                {
+                    "texto": "A3"
+                },
+                {
+                    "texto": "G4"
+                },
+                {
+                    "texto": "D2"
+                }
+            ],
+            "correcta": [
+                "D2",
+                "A3",
+                "G4",
+                "C5"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las alteraciones de **más a menos común** en armaduras de clave (mayor uso):",
+            "opciones": [
+                {
+                    "texto": "bemol"
+                },
+                {
+                    "texto": "sostenido"
+                },
+                {
+                    "texto": "becuadro"
+                }
+            ],
+            "correcta": [
+                "sostenido",
+                "bemol",
+                "becuadro"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena las duraciones de **mayor a menor**:",
+            "opciones": [
+                {
+                    "texto": "redonda"
+                },
+                {
+                    "texto": "negra"
+                },
+                {
+                    "texto": "blanca"
+                },
+                {
+                    "texto": "corchea"
+                }
+            ],
+            "correcta": [
+                "redonda",
+                "blanca",
+                "negra",
+                "corchea"
+            ]
+        },
+        {
+            "tipo": "order",
+            "texto": "Ordena los pasos para construir una **escala mayor** (secuencia lógica):",
+            "opciones": [
+                {
+                    "texto": "Aplicar fórmula T-T-S-T-T-T-S"
+                },
+                {
+                    "texto": "Elegir la tónica"
+                },
+                {
+                    "texto": "Escribir las 7 notas sin alterar"
+                },
+                {
+                    "texto": "Añadir alteraciones necesarias"
+                }
+            ],
+            "correcta": [
+                "Elegir la tónica",
+                "Escribir las 7 notas sin alterar",
+                "Aplicar fórmula T-T-S-T-T-T-S",
+                "Añadir alteraciones necesarias"
+            ]
+        }
+    ]
+}

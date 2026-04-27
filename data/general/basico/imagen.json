@@ -1,0 +1,60 @@
+{
+    "cantidad": 3,
+    "tema": "Imagen - Basico",
+    "preguntas": [
+        {
+            "tipo": "image",
+            "texto": "¿Cuál de estas figuras rítmicas es una **corchea**?",
+            "opciones": [
+                {
+                    "src": "https://primeroareal20.wordpress.com/wp-content/uploads/2020/04/redonda.jpg",
+                    "correcta": false
+                },
+                {
+                    "src": "https://www.nicepng.com/png/full/105-1059898_la-nota-musical-corchea-vale-la-mitad-de.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkz9Q9K-IpNt8bqKNh6o1JbaEoRXGEnzrt2A&s",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica el **pentagrama**",
+            "opciones": [
+                {
+                    "src": "https://geometriamagicomundodelorigami.wordpress.com/wp-content/uploads/2016/12/linea-recta.jpg?w=840",
+                    "correcta": false
+                },
+                {
+                    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Music-staff.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://image.jimcdn.com/app/cms/image/transf/dimension=910x10000:format=jpg/path/sb4f720241e8529a4/image/ic5f0323303e7914e/version/1421959710/image.jpg",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona la imagen que muestra una **blanca**.",
+            "opciones": [
+                {
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1avcKaCFgU8FcpnmapugKpsZ7XLBrvQpLxA&s",
+                    "correcta": false
+                },
+                {
+                    "src": "https://mediateca.educa.madrid.org/imagen.php?id=d5kcrmaq2oancyo9&type=2",
+                    "correcta": true
+                },
+                {
+                    "src": "https://primeroareal20.wordpress.com/wp-content/uploads/2020/04/redonda.jpg",
+                    "correcta": false
+                }
+            ]
+        }
+    ]
+}

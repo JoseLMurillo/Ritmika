@@ -1,0 +1,239 @@
+{   "cantidad": 4,
+    "tema": "Secuencia - Basico",
+    "preguntas": [
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el intervalo. ¿Es una tercera mayor o una tercera menor?",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 100,
+                "sequence": [
+                    {
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Tercera mayor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Tercera menor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "ESTA PREGUNTA ESTA EN DESARROLLO - Escucha el ritmo. ¿En qué compás encaja mejor? Bombo Caja x4",
+            "audioPregunta": {
+                "type": "drumPattern",
+                "tempo": 100,
+                "pattern": [
+                    {
+                        "drum": "kick",
+                        "time": 0
+                    },
+                    {
+                        "drum": "snare",
+                        "time": 0.5
+                    },
+                    {
+                        "drum": "kick",
+                        "time": 1
+                    },
+                    {
+                        "drum": "snare",
+                        "time": 1.5
+                    },
+                    {
+                        "drum": "kick",
+                        "time": 2
+                    },
+                    {
+                        "drum": "snare",
+                        "time": 2.5
+                    },
+                    {
+                        "drum": "kick",
+                        "time": 3
+                    },
+                    {
+                        "drum": "snare",
+                        "time": 3.5
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "2/4",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "kick"
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "3/4",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "4/4",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "hat"
+                    },
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha la escala. ¿Es mayor o menor?",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 140,
+                "sequence": [
+                    {
+                        "note": "A3",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "B3",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "C4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "D4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "F4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "G4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "A4",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "Mayor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "A3",
+                        "duration": 0.5
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "Menor",
+                    "sonido": {
+                        "type": "note",
+                        "note": "A3",
+                        "duration": 0.5
+                    },
+                    "correcta": true
+                }
+            ]
+        },
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha la melodía. ¿Cuántos pulsos tiene el primer compás (compás de 4/4)?",
+            "audioPregunta": {
+                "type": "melody",
+                "tempo": 110,
+                "sequence": [
+                    {
+                        "note": "C4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "C4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "D4",
+                        "duration": 0.5
+                    },
+                    {
+                        "note": "E4",
+                        "duration": 1
+                    },
+                    {
+                        "note": "rest",
+                        "duration": 1
+                    }
+                ]
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "3 pulsos",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "4 pulsos",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "2 pulsos",
+                    "sonido": {
+                        "type": "drum",
+                        "drum": "snare"
+                    },
+                    "correcta": false
+                }
+            ]
+        }
+    ]
+}

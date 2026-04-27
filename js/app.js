@@ -14,63 +14,129 @@ const contenedor = document.getElementById("contenedor");
 const btnConfirmar = document.getElementById("btnConfirmar");
 let correctas = 0;
 
+let preguntasLeccion = [];
+
 // Función principal para cargar los datos
 async function cargarQuiz() {
     const modulo = selectorModulo.value;
     const nivel = selectorNivel.value;
 
-    // Solo disparamos el fetch si ambos campos tienen valor
     if (!modulo || !nivel) return;
 
     try {
-        // Usamos la estructura de carpetas: ./data/modulo/nivel.json
-        const response = await fetch(`./data/${modulo}/${nivel}.json`);
-        
-        if (!response.ok) throw new Error("Archivo no encontrado");
+        // 🔥 Ruta correcta del JSON base
+        const basePath = `./data/${modulo}/${nivel}`;
+        const response = await fetch(`${basePath}/${nivel}.json`);
+
+        if (!response.ok) throw new Error("Archivo base no encontrado");
 
         quizData = await response.json();
+
+        let gruposData = [];
+
+        // 🔥 1. Cargar todos los grupos
+        for (const grupo of quizData.grupos) {
+            const resGrupo = await fetch(`${basePath}/${grupo}.json`);
+            if (!resGrupo.ok) {
+                console.warn(`Grupo no encontrado: ${grupo}`);
+                continue;
+            }
+
+            const dataGrupo = await resGrupo.json();
+
+            gruposData.push({
+                nombre: grupo,
+                preguntas: shuffle(dataGrupo.preguntas || [])
+            });
+        }
+
+        // ⚠️ Si no hay grupos válidos
+        if (gruposData.length === 0) {
+            throw new Error("No se cargaron grupos de preguntas");
+        }
+
+        // 🔥 2. Total de preguntas (10–20)
+        const totalPreguntas = Math.floor(Math.random() * 11) + 10;
+
+        // 🔥 3. Mínimo por grupo (1 o 2)
+        const minPorGrupo = totalPreguntas >= gruposData.length * 2 ? 2 : 1;
+
+        let seleccion = [];
+
+        // 🔥 4. Primera pasada (mínimo por grupo)
+        for (const grupo of gruposData) {
+            const tomadas = grupo.preguntas.slice(
+                0,
+                Math.min(minPorGrupo, grupo.preguntas.length)
+            );
+
+            seleccion = seleccion.concat(tomadas);
+
+            grupo.preguntas = grupo.preguntas.slice(tomadas.length);
+        }
+
+        // 🔥 5. Restantes
+        let restantes = totalPreguntas - seleccion.length;
+
+        // 🔥 6. Reparto balanceado
+        let index = 0;
+
+        while (restantes > 0) {
+            const grupo = gruposData[index % gruposData.length];
+
+            if (grupo.preguntas.length > 0) {
+                seleccion.push(grupo.preguntas.shift());
+                restantes--;
+            }
+
+            index++;
+
+            // ⚠️ Evita loop infinito si ya no hay preguntas
+            if (index > 1000) break;
+        }
+
+        // 🔥 7. Mezcla final
+        preguntasLeccion = shuffle(seleccion);
+
+        // 🔥 Estado
         preguntaActual = 0;
+        correctas = 0;
         btnConfirmar.disabled = false;
 
         cargarPregunta();
-        console.log(`Cargado: ${modulo} en nivel ${nivel}`);
+
+        console.log(`Preguntas cargadas: ${preguntasLeccion.length}`);
+
     } catch (error) {
         console.error("Error al cargar el JSON:", error);
     }
 }
-
 
 // Eventos
 selectorModulo.addEventListener("change", () => {
     // Si cambia el módulo, reiniciamos el nivel para obligar a elegir uno nuevo
     selectorNivel.value = "";
     btnConfirmar.disabled = true;
-    
+
     // Opcional: Mostrar el selector de nivel si estaba oculto
     selectorNivel.style.display = "block";
 });
 
 selectorNivel.addEventListener("change", cargarQuiz);
 
-
 function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-} 
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 function cargarPregunta() {
-
     respuestaUsuario = null;
     contenedor.innerHTML = "";
 
-    quizData.preguntas = shuffle(quizData.preguntas);
-    const listPreguntas = quizData.preguntas.slice(0, Math.floor(Math.random() * 6) + 10); 
-    
-    //const pregunta = quizData.preguntas[preguntaActual];
-    const pregunta = listPreguntas[preguntaActual]; // PARA CARGAR TODAS LAS PREGUNTAS Y PROBARLAS
+    const pregunta = preguntasLeccion[preguntaActual];
 
     tema.textContent = quizData.tema;
     preguntaTexto.textContent = pregunta.texto;
@@ -207,8 +273,10 @@ function cargarPregunta() {
 
 btnConfirmar.addEventListener("click", () => {
 
-    const pregunta = quizData.preguntas[preguntaActual];
-    let correcta = false;
+    //const pregunta = quizData.preguntas[preguntaActual];
+    //let correcta = false;
+
+    const pregunta = preguntasLeccion[preguntaActual];
 
     switch (pregunta.tipo) {
         case "select":
@@ -230,7 +298,7 @@ btnConfirmar.addEventListener("click", () => {
         playSound(sonidoCorrecto);
         correctas++;
         // document.getElementById("explicacionTexto").textContent = pregunta.explicacion;
-        
+
         console.log("Correctas:", correctas);
     } else {
         playSound(sonidoIncorrecto);
@@ -238,10 +306,10 @@ btnConfirmar.addEventListener("click", () => {
 
     setTimeout(() => {
         preguntaActual++;
-        if (preguntaActual < quizData.preguntas.length) {
+        if (preguntaActual < preguntasLeccion.length) {
             cargarPregunta();
         } else {
-            alert(`Módulo finalizado. Preguntas correctas: ${correctas}/${quizData.preguntas.length}`);
+            alert(`Módulo finalizado. Preguntas correctas: ${correctas}/${preguntasLeccion.length}`);
         }
     }, 800);
 });

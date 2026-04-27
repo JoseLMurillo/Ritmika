@@ -25,8 +25,90 @@ function playSound(sound) {
     if (sound.type === "melody") {
         playMelody(sound.sequence, sound.tempo || 120);
     }
+
+    // Si es patrón de batería
+    if (sound.type === "drumPattern") {
+        playDrumPattern(sound.pattern, sound.tempo || 120);
+    }
+
+    // Si es acorde
+    if (sound.type === "chord") {
+        playChord(sound.notes, sound.duration || 2);
+    }
 }
 
+function playChord(notes, duration) {
+    const now = audioCtx.currentTime;
+
+    notes.forEach(note => {
+        // Creamos los nodos para cada nota del acorde
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+
+        osc.type = "sine"; // Puedes cambiar a "triangle" para un sonido más cálido
+        osc.frequency.value = noteToFrequency(note);
+
+        // Configuración de volumen (ADSR básico)
+        // Dividimos el volumen entre el número de notas para evitar saturación (clipping)
+        const volume = 0.5 / notes.length;
+
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.exponentialRampToValueAtTime(volume, now + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + duration);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc.start(now);
+        osc.stop(now + duration);
+    });
+}
+
+function playDrumPattern(pattern, tempo) {
+    const beatTime = 60 / tempo;
+    const startTime = audioCtx.currentTime;
+
+    pattern.forEach(step => {
+        // Calculamos el momento exacto en el que debe sonar (basado en el beat)
+        const time = startTime + (step.time * beatTime);
+
+        // Llamamos a una versión modificada de playDrum que acepte un tiempo de inicio
+        playDrumAtTime(step.drum, time);
+    });
+}
+
+function playDrumAtTime(drum, time) {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+
+    if (drum === "kick") {
+        osc.frequency.setValueAtTime(150, time);
+        osc.frequency.exponentialRampToValueAtTime(0.001, time + 0.5);
+        gain.gain.setValueAtTime(1, time);
+        gain.gain.exponentialRampToValueAtTime(0.001, time + 0.5);
+    }
+
+    if (drum === "snare") {
+        osc.type = "triangle";
+        osc.frequency.setValueAtTime(100, time); // Un tono base para el redoblante
+        gain.gain.setValueAtTime(0.5, time);
+        gain.gain.exponentialRampToValueAtTime(0.001, time + 0.2);
+    }
+
+    // Opcional: Agregar un Hi-Hat rápido
+    if (drum === "hihat") {
+        osc.type = "square";
+        osc.frequency.setValueAtTime(10000, time);
+        gain.gain.setValueAtTime(0.1, time);
+        gain.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
+    }
+
+    osc.start(time);
+    osc.stop(time + 0.5);
+}
 
 function playNote({ note = "C4", duration = 0.4 }) {
 

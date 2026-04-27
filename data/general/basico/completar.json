@@ -1,0 +1,30 @@
+{   "cantidad": 5,
+    "tema": "Completar - Basico",
+    "preguntas": [
+        {
+            "tipo": "complete",
+            "texto": "Una **negra** dura ______ tiempo(s) en un compás de 4/4.",
+            "correcta": "1"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La escala de **Sol Mayor** tiene un (nota)______ sostenido.",
+            "correcta": "fa"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El acorde de C está formado por las notas C, ______ y G.",
+            "correcta": "E"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Un **tono** equivale a (numero)______ semitonos.",
+            "correcta": "2"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El grado **V** de la escala se llama d______.",
+            "correcta": "dominante"
+        }
+    ]
+}

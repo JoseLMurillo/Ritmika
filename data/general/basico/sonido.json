@@ -1,0 +1,46 @@
+{   "cantidad": 1,
+    "tema": "Sonido - Basico",
+    "preguntas": [
+        {
+            "tipo": "audioQuestion",
+            "texto": "Escucha el sonido. ¿Qué nota es? ESCUCHA, PIENSA Y LUEGO SELECCIONA",
+            "audioPregunta": {
+                "type": "note",
+                "note": "F4",
+                "duration": 1.5
+            },
+            "opciones": [
+                {
+                    "tipo": "texto",
+                    "contenido": "E4",
+                    "sonido": {
+                        "type": "note",
+                        "note": "E4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "F4",
+                    "sonido": {
+                        "type": "note",
+                        "note": "F4",
+                        "duration": 1
+                    },
+                    "correcta": true
+                },
+                {
+                    "tipo": "texto",
+                    "contenido": "G4",
+                    "sonido": {
+                        "type": "note",
+                        "note": "G4",
+                        "duration": 1
+                    },
+                    "correcta": false
+                }
+            ]
+        }
+    ]
+}
