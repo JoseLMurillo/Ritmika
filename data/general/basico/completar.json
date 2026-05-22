@@ -25,6 +25,106 @@
             "tipo": "complete",
             "texto": "El grado **V** de la escala se llama d______.",
             "correcta": "dominante"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Una **blanca** dura ______ tiempo(s) o pulsos completos.",
+            "correcta": "2"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El compás de **4/4** también es conocido como 'Tiempo ______'.",
+            "correcta": "común"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Una **redonda** equivale a (numero)______ blancas.",
+            "correcta": "2"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El número de arriba en un compás (numerador) indica cuántos ______ hay en cada compás.",
+            "correcta": "tiempos"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El compás de **2/4** es comúnmente asociado con el ritmo de ______.",
+            "correcta": "marcha"
+        },
+        {
+            "tipo": "complete",
+            "texto": "En el cifrado anglosajón, la letra **E** representa la nota ______.",
+            "correcta": "Mi"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El pentagrama está compuesto por ______ líneas horizontales.",
+            "correcta": "5"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La **Clave de Sol** se sitúa en la ______ línea del pentagrama.",
+            "correcta": "segunda"
+        },
+        {
+            "tipo": "complete",
+            "texto": "En el cifrado anglosajón, la letra **B** representa la nota ______.",
+            "correcta": "Si"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La **Clave de Fa** se sitúa en la ______ línea del pentagrama.",
+            "correcta": "cuarta"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La distancia más pequeña entre dos notas en el sistema occidental es el ______.",
+            "correcta": "semitono"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La escala de **Do Mayor** es la única que no tiene sostenidos ni ______.",
+            "correcta": "bemoles"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El grado **I** de una escala se conoce como ______.",
+            "correcta": "tónica"
+        },
+        {
+            "tipo": "complete",
+            "texto": "En la escala de **Fa Mayor**, la nota que lleva un bemol es ______.",
+            "correcta": "Si"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Un **unísono** es un intervalo que tiene (numero)______ semitonos.",
+            "correcta": "0"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Una **tríada** es un acorde construido por (numero)______ notas.",
+            "correcta": "3"
+        },
+        {
+            "tipo": "complete",
+            "texto": "La nota más grave de un acorde en estado fundamental se llama ______.",
+            "correcta": "fundamental"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El acorde de **Sol Mayor (G)** está formado por las notas G, B y ______.",
+            "correcta": "D"
+        },
+        {
+            "tipo": "complete",
+            "texto": "Un acorde **menor** suele tener un sonido que se describe como ______.",
+            "correcta": "melancólico"
+        },
+        {
+            "tipo": "complete",
+            "texto": "El acorde de **La menor (Am)** está formado por las notas A, ______ y E.",
+            "correcta": "C"
         }
     ]
 }

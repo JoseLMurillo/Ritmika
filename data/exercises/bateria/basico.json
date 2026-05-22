@@ -1,0 +1,13 @@
+{
+    "tema": "Ejercicios batería básicos",
+    "ejercicios": [
+        {
+            "id": "time_001",
+            "tipo": "tiempo",
+            "titulo": "Pulso básico",
+            "descripcion": "Mantén negras constantes.",
+            "tempo": 80,
+            "compas": 4
+        }
+    ]
+}

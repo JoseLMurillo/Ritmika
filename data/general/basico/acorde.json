@@ -1,42 +1,486 @@
 {
-    "cantidad": 1,
-    "tema": "Acorde - Basico",
-    "preguntas": [
+  "cantidad": 20,
+  "tema": "Acorde - Basico",
+  "preguntas": [
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["C4", "E4", "G4"],
+        "duration": 4
+      },
+      "opciones": [
         {
-            "tipo": "audioQuestion",
-            "texto": "Escucha el acorde. ¿Es mayor o menor?",
-            "audioPregunta": {
-                "type": "chord",
-                "tempo": 80,
-                "notes": [
-                    "D4",
-                    "F4",
-                    "A4"
-                ],
-                "duration": 4
-            },
-            "opciones": [
-                {
-                    "tipo": "texto",
-                    "contenido": "Mayor",
-                    "sonido": {
-                        "type": "note",
-                        "note": "D4",
-                        "duration": 1
-                    },
-                    "correcta": false
-                },
-                {
-                    "tipo": "texto",
-                    "contenido": "Menor",
-                    "sonido": {
-                        "type": "note",
-                        "note": "D4",
-                        "duration": 1
-                    },
-                    "correcta": true
-                }
-            ]
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "C4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "C4", "duration": 1 },
+          "correcta": false
         }
-    ]
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["A2", "C3", "E3"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "A2", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "A2", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["E4", "G#4", "B4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "E4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "E4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["F#3", "A3", "C#4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "F#3", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "F#3", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["Bb3", "D4", "F4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "Bb3", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "Bb3", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["G4", "B4", "D5"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "G4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "G4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["C5", "Eb5", "G5"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "C5", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "C5", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["D4", "F#4", "A4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "D4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "D4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["E3", "G3", "B3"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "E3", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "E3", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["F4", "Ab4", "C5"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "F4", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "F4", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["B3", "D#4", "F#4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "B3", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "B3", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["G#4", "B4", "D#5"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "G#4", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "G#4", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["Db4", "F4", "Ab4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "Db4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "Db4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["Ab3", "Cb4", "Eb4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "Ab3", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "Ab3", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["A4", "C#5", "E5"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "A4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "A4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["F3", "A3", "C4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "F3", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "F3", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["B2", "D3", "F#3"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "B2", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "B2", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["Eb4", "G4", "Bb4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "Eb4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "Eb4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["G3", "Bb3", "D4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "G3", "duration": 1 },
+          "correcta": false
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "G3", "duration": 1 },
+          "correcta": true
+        }
+      ]
+    },
+    {
+      "tipo": "audioQuestion",
+      "texto": "Escucha el acorde. ¿Es mayor o menor?",
+      "audioPregunta": {
+        "type": "chord",
+        "tempo": 80,
+        "notes": ["C#4", "E#4", "G#4"],
+        "duration": 4
+      },
+      "opciones": [
+        {
+          "tipo": "texto",
+          "contenido": "Mayor",
+          "sonido": { "type": "note", "note": "C#4", "duration": 1 },
+          "correcta": true
+        },
+        {
+          "tipo": "texto",
+          "contenido": "Menor",
+          "sonido": { "type": "note", "note": "C#4", "duration": 1 },
+          "correcta": false
+        }
+      ]
+    }
+  ]
 }

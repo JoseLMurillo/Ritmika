@@ -1,5 +1,5 @@
 {
-    "cantidad": 3,
+    "cantidad": 23,
     "tema": "Imagen - Basico",
     "preguntas": [
         {
@@ -52,6 +52,366 @@
                 },
                 {
                     "src": "https://primeroareal20.wordpress.com/wp-content/uploads/2020/04/redonda.jpg",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Qué figura rítmica representa un círculo blanco sin palo y vale **4 tiempos**?",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/redonda.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/blanca.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/negra.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica la **negra**, la unidad de pulso más común (círculo negro con un palo).",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/corchea.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/negra.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/redonda.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Cuál de estas imágenes muestra **dos corcheas unidas** por una barra (corchete)?",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/dos_corcheas_unidas.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/dos_negras.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/blanca.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica la **semicorchea**, que se distingue por tener dos banderitas.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/corchea.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/semicorchea.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/negra.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona la **línea divisoria** (barra de compás) que separa los grupos de pulsos.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/linea_divisoria.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/pentagrama_vacio.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/clave_sol.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Qué imagen muestra la **doble barra final**, indicando el término de la pieza?",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/barra_simple.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/doble_barra_final.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/lineas_adicionales.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica la indicación de compás de **4/4**, también llamado 'Tiempo Común'.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/compas_34.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/compas_44.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/compas_24.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona el compás de **3/4**, característico del ritmo de vals.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/compas_34.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/compas_44.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/compas_24.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica la **Clave de Sol**, que rodea la segunda línea del pentagrama.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/clave_fa.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/clave_sol.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/clave_do.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica la **Clave de Fa**, cuyos dos puntos enmarcan la cuarta línea.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/clave_sol.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/clave_fa.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/clave_do.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona la **Clave de Do**, utilizada frecuentemente para la viola.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/clave_do.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/clave_sol.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/clave_fa.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Qué imagen muestra **líneas adicionales**, usadas para notas fuera del pentagrama?",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/pentagrama_estandar.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/lineas_adicionales.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/doble_barra.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "En el piano, identifica el **semitono natural** entre las teclas blancas **Mi y Fa**.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/piano_do_re.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/piano_mi_fa.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/piano_sol_la.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica en el teclado un **tono completo** (donde hay una tecla negra en medio).",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/piano_do_re.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/piano_mi_fa.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/piano_si_do.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Cuál de estas imágenes representa un intervalo de **octava** (ej: Do a Do)?",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/intervalo_tercera.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/intervalo_octava.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/intervalo_unisono.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica una **tríada en estado fundamental** (tres notas apiladas por terceras).",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/nota_individual.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/triada_fundamental.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/escala_completa.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Selecciona el acorde de **Do Mayor (C)** formado por las notas C, E y G.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/acorde_do_mayor.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/acorde_la_menor.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/acorde_sol_mayor.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica el acorde de **La menor (Am)** formado por las notas A, C y E.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/acorde_do_mayor.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/acorde_la_menor.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/acorde_re_menor.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "¿Qué imagen muestra la **escala de Sol Mayor**, que incluye un **Fa#**?",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/escala_do_mayor.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/escala_sol_mayor.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/escala_fa_mayor.png",
+                    "correcta": false
+                }
+            ]
+        },
+        {
+            "tipo": "image",
+            "texto": "Identifica el **Grado I (Tónica)**, el centro gravitacional u 'hogar' de la escala.",
+            "opciones": [
+                {
+                    "src": "https://ejemplo.com/grado_v_dominante.png",
+                    "correcta": false
+                },
+                {
+                    "src": "https://ejemplo.com/grado_i_tonica.png",
+                    "correcta": true
+                },
+                {
+                    "src": "https://ejemplo.com/grado_iv_subdominante.png",
                     "correcta": false
                 }
             ]
